@@ -19,5 +19,7 @@ class DuplicateElementFound
 			}
 		}
 		System.out.println(map);
+		
+		//find only duplicate number 
 	}
 }

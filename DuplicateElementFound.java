@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Map.Entry;
 class DuplicateElementFound
 {
 	public static void main(String[] args)
@@ -21,5 +22,13 @@ class DuplicateElementFound
 		System.out.println(map);
 		
 		//find only duplicate number 
+		
+		Iterator<Map.Entry<Integer,Integer>> itr=map.entrySet().iterator();
+	    while(itr.hasNext()) {
+		  Map.Entry<Integer,Integer> entry=itr.next();
+		  if(entry.getValue()>1) {
+			System.out.println(entry.getKey());
+		}
+	}
 	}
 }
